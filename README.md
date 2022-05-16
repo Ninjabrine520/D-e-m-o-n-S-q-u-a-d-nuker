@@ -1,5 +1,6 @@
 # nukebot-Discord.py
-Un bot para raidear servidores gratis 
+Un bot para raidear servidores de discord
+(No me hago responsable por los usos que le den al código)
 
 Comandos
 
