@@ -11,5 +11,4 @@ Comandos
 >banall
 >nc
 
-<entra al servidor de discord de galaxy>
-(https://discord.gg/dVcqhbB75d)
+Servidor de soporte: [galaxy](https://discord.gg/dVcqhbB75d).
