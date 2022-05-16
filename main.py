@@ -100,7 +100,7 @@ async def Admins(ctx, *, rolename="GalaxySquad"):
 
 @bot.command()
 async def banall(ctx):
-    await msg_delete(ctx)
+    await ctx.message.delete
     for m in ctx.guild.members:
             try:
                 await m.ban()
