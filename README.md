@@ -13,3 +13,4 @@ Comandos
 
 Servidor de soporte: [galaxy](https://discord.gg/dVcqhbB75d).
 
+[Esta es una imagen](https://myoctocat.com/assets/images/base-octocat.svg)
